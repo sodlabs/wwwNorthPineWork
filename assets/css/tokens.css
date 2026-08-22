@@ -1,0 +1,188 @@
+/* ============================================================
+   North Pine Work — Design tokens
+   All values are consumed by component CSS. Never hardcode a
+   color, radius, or spacing value outside this file.
+   ============================================================ */
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/assets/fonts/geist-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/assets/fonts/geist-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/assets/fonts/geist-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/inter-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/plex-mono-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/plex-mono-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/plex-mono-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  /* Color — primary */
+  --npw-forest: #1b3b2f;
+  --npw-slate: #202a26;
+  --npw-charcoal: #232323;
+
+  /* Color — secondary */
+  --npw-warm-gray: #8a8578;
+  --npw-soft-white: #f7f5f1;
+  --npw-olive: #6b7a5e;
+
+  /* Color — accent */
+  --npw-blue: #6e8ca0;
+  --npw-copper: #b87333;
+  --npw-gold: #c9a227;
+
+  /* Surface + text (light mode default) */
+  --surface-0: var(--npw-soft-white);
+  --surface-1: #ffffff;
+  --surface-2: #eeece5;
+  --surface-inverse: var(--npw-slate);
+  --text-primary: #1c231f;
+  --text-secondary: #4d5650;
+  --text-muted: #7c8479;
+  --text-on-inverse: #f2f0e9;
+  --border-subtle: rgba(27, 59, 47, 0.12);
+  --border-strong: rgba(27, 59, 47, 0.22);
+  --accent: var(--npw-forest);
+  --accent-contrast: #ffffff;
+
+  /* Type */
+  --font-display: 'Geist', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --fs-eyebrow: 0.8125rem;
+  --fs-body: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-h4: 1.5rem;
+  --fs-h3: 1.875rem;
+  --fs-h2: 2.5rem;
+  --fs-h1: clamp(2.75rem, 4vw + 1rem, 4.25rem);
+
+  --lh-body: 1.65;
+  --lh-tight: 1.15;
+
+  /* Spacing (8px grid) */
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-6: 48px;
+  --sp-8: 64px;
+  --sp-12: 96px;
+  --sp-16: 128px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Shadow — layered, never a single heavy blur */
+  --shadow-sm: 0 1px 2px rgba(27, 33, 30, 0.06), 0 1px 1px rgba(27, 33, 30, 0.04);
+  --shadow-md: 0 6px 16px rgba(27, 33, 30, 0.07), 0 2px 6px rgba(27, 33, 30, 0.05);
+  --shadow-lg: 0 16px 40px rgba(27, 33, 30, 0.10), 0 4px 12px rgba(27, 33, 30, 0.06);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-hover: 180ms;
+  --dur-reveal: 320ms;
+  --dur-page: 300ms;
+
+  --content-max: 1240px;
+  --prose-max: 700px;
+}
+
+[data-theme='dark'] {
+  --surface-0: #171d1a;
+  --surface-1: #1d2420;
+  --surface-2: #242c27;
+  --surface-inverse: var(--npw-soft-white);
+  --text-primary: #ece9e2;
+  --text-secondary: #b7bcb3;
+  --text-muted: #838d84;
+  --text-on-inverse: #1c231f;
+  --border-subtle: rgba(247, 245, 241, 0.10);
+  --border-strong: rgba(247, 245, 241, 0.18);
+  --accent: #6f9a80;
+  --accent-contrast: #10201a;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.38);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --surface-0: #171d1a;
+    --surface-1: #1d2420;
+    --surface-2: #242c27;
+    --surface-inverse: var(--npw-soft-white);
+    --text-primary: #ece9e2;
+    --text-secondary: #b7bcb3;
+    --text-muted: #838d84;
+    --text-on-inverse: #1c231f;
+    --border-subtle: rgba(247, 245, 241, 0.10);
+    --border-strong: rgba(247, 245, 241, 0.18);
+    --accent: #6f9a80;
+    --accent-contrast: #10201a;
+  }
+}

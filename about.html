@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About · North Pine Work</title>
+<meta name="description" content="A small, senior team working on infrastructure, backend systems and security. How North Pine Work operates and why." />
+<link rel="canonical" href="https://setarys.xyz/about" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="North Pine Work" />
+<meta property="og:title" content="About · North Pine Work" />
+<meta property="og:description" content="A small, senior team working on infrastructure, backend systems and security. How North Pine Work operates and why." />
+<meta property="og:url" content="https://setarys.xyz/about" />
+<meta property="og:image" content="https://setarys.xyz/assets/images/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/assets/images/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="stylesheet" href="/assets/css/tokens.css" />
+<link rel="stylesheet" href="/assets/css/base.css" />
+<link rel="stylesheet" href="/assets/css/components.css" />
+
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('npw-theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a href="/" class="brand">
+      <svg class="brand__mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 2L23 15H18L23 22H5L10 15H5L14 2Z" fill="var(--npw-forest)" />
+        <rect x="12.5" y="22" width="3" height="4" fill="var(--npw-copper)" />
+      </svg>
+      North Pine Work
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="/services" >Services</a></li>
+        <li><a href="/industries" >Industries</a></li>
+        <li><a href="/process" >Process</a></li>
+        <li><a href="/blog" >Blog</a></li>
+        <li><a href="/about" aria-current=&#39;page&#39;>About</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="/contact" class="btn btn-primary">Talk to us</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="container mobile-menu__top">
+    <span class="brand">North Pine Work</span>
+    <button class="nav-toggle" type="button" aria-label="Close menu" onclick="document.getElementById('mobile-menu').classList.remove('is-open'); document.body.style.overflow='';">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu__links container">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/industries">Industries</a></li>
+    <li><a href="/process">Process</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
+
+
+  <main id="main">
+    <section style="padding-top: var(--sp-12);">
+      <div class="container">
+        <p class="eyebrow reveal">About</p>
+        <h1 class="reveal" style="max-width: 780px;">We started this firm because most engineering problems are diagnosed too late.</h1>
+        <p class="lead prose reveal">North Pine Work is a small, senior team working on infrastructure, backend systems and security: the layers of a product nobody notices until they fail.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2" style="gap: var(--sp-6);">
+        <div class="reveal">
+          <h2>Why we work this way</h2>
+          <p>Most consultancies scale by adding layers between the client and the engineer doing the work. We've deliberately stayed small enough that the person who scopes your project is the person who builds it.</p>
+          <p>That means we take on fewer clients at a time, and we say no to work that doesn't fit our team's actual expertise, rather than staffing around the gap.</p>
+        </div>
+        <div class="reveal">
+          <h2>What we won't do</h2>
+          <p>We won't recommend a rebuild when a smaller fix will hold. We won't bill for a security review that's really a checklist. And we won't take on a maintenance contract for a system we don't believe we can keep healthy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Principles</p>
+          <h2>How we make decisions</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card reveal">
+            <h3>Write it down</h3>
+            <p>Every assessment ends in a document, not a slide deck. Decisions should survive the meeting where they were made.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Prefer boring</h3>
+            <p>A well-understood technology beats a novel one, unless the novel one solves a problem the boring one genuinely can't.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Hand off cleanly</h3>
+            <p>Our engagements end with your team able to operate what we built. Not dependent on us to keep it running.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card reveal" style="text-align:center; padding: var(--sp-8) var(--sp-4);">
+          <h2>Want to know if we're a fit?</h2>
+          <p class="prose" style="margin: 0 auto var(--sp-3);">A short call is usually enough to tell.</p>
+          <a href="/contact" class="btn btn-primary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="brand" style="margin-bottom: 12px; display:flex;">
+          <svg class="brand__mark" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 2L23 15H18L23 22H5L10 15H5L14 2Z" fill="var(--npw-forest)" />
+            <rect x="12.5" y="22" width="3" height="4" fill="var(--npw-copper)" />
+          </svg>
+          North Pine Work
+        </span>
+        <p style="max-width: 320px;">Infrastructure, backend systems and security work for teams that need things to keep running after launch day.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/process">Process</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul class="footer-links">
+          <li><a href="/services">Services</a></li>
+          <li><a href="/industries">Industries</a></li>
+          <li><a href="/contact">Start a project</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="/contact">Contact form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 North Pine Work. All rights reserved.</span>
+      <span>Registered remotely. Team distributed.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+
+</body>
+</html>
